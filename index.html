@@ -1,1 +1,59 @@
-<h1>Product Landing Page</h1>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/custom-style.css">
+        <style>
+             @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+            width: 100%;
+                }
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="header" class="fixed-header">
+            <center>
+                <img id="header-img" class="header-img" src="https://upload.wikimedia.org/wikipedia/commons/9/97/Sennheiser_Logo.png">
+                <nav id="nav-bar">
+                    <a class="nav-link" href="#product-video">Product Video</a>
+                    <a class="nav-link" href="#buy-at-online-store">Buy at Online Store</a>
+                    <a class="nav-link" href="#enter-your-email">Enter Your Email</a>
+                </nav>
+            </center>           
+        </header>
+        <section id="product-video">
+            <center>
+                <h1>Sennheiser Product Landing Page</h1>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/vYcClw_vCew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </section>
+        
+        <section id="buy-at-online-store">
+            <center>
+                <div class="flex-container">
+                    <div><a href="amazon-affiliate-link">Buy on Amazon</a></div>
+                    <div><a href="walmart-affiliate-link">Buy on Walmart</a></div>
+                    <div><a href="mediamarkt-affiliate-link">Buy on Mediamarkt</a></div>
+                </div>
+            </center>
+        </section>
+
+        <section id="enter-your-email">
+            <center>
+                <h2>Enter Your Email</h2>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <br>
+                    <input id="email" type="email" placeholder="yourock@gmail.com" name="email"></input>
+                    <input id="submit" type="submit" class="submit"></input>
+                </form>
+            </center>
+        </section>   
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
